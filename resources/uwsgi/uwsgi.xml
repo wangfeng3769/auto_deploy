@@ -1,0 +1,13 @@
+<uwsgi> 
+  <socket>127.0.0.1:9000</socket> 
+  <master>true</master> 
+  <processes>8</processes> 
+  <pythonpath>/var/www/scm</pythonpath>  
+  <module>django_uwsgi</module> 
+  <profiler>true</profiler> 
+  <memory-report>true</memory-report> 
+  <enable-threads>true</enable-threads> 
+  <logdate>true</logdate> 
+  <limit-as>512</limit-as> 
+  <daemonize>/var/www/django.log</daemonize> 
+</uwsgi> 
